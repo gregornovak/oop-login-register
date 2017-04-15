@@ -7,6 +7,11 @@ class Hash
         return password_hash($string, PASSWORD_BCRYPT);
     }
 
+    public static function verify($string, $hash)
+    {
+        return password_verify($string, $hash);
+    }
+
 //    public static function salt($length)
 //    {
 //        return utf8_encode(mcrypt_create_iv($length));

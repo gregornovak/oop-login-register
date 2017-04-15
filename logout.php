@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: grega
- * Date: 4. 04. 2017
- * Time: 18:57
- */
+require_once 'core/init.php';
+
+$user = new User();
+$user->logout();
+
+Redirect::to('index.php');

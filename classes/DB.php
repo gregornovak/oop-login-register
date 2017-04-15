@@ -112,7 +112,7 @@ class DB
             $x++;
         }
         // update query
-        $sql = "UPDATE `{$table}` SET `{$set}` WHERE id = `{$id}``";
+        $sql = "UPDATE {$table} SET {$set} WHERE id = {$id}";
         // if no error return true else false
         if(!$this->query($sql, $fields)->error()) {
             return true;
